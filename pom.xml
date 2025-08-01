@@ -62,6 +62,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <!-- HERE WE PROVIDE SUITEXMLFILE PATH TO OUR XML FILE -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/java/api/qa/petstore/runners/regression.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+
                     <includes>
                         <include>**/*Steps.java</include>
                         <include>**/*Tests.java</include>
