@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test name="PetStore Automation Test Cases" parallel="tests" thread-count="2">
+
+        <classes>
+
+            <class name="api.qa.petstore.test.CreatePetTests"/>
+            <class name="api.qa.petstore.test.FindPetByIDTests"/>
+
+        </classes>
+
+
+    </test>
+
+</suite>
